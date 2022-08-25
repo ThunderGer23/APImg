@@ -64,11 +64,12 @@ _Conocimientos intermadios en bases de datos, servidores, microservicios y pytho
 
 _Debe contar con el siguiente conjunto de herramientas instaladas_
 
-Python
-Editor de texto/IDE
-MongoDB
-Postman
+- [ ] Python
+- [ ] Editor de texto/IDE
+- [ ] MongoDB
+- [ ] Postman
 
+_Con lo anterior en mente es importante mencionar que se recomienda la integración de un entorno virtual para el desarrollo de nuevas funcionalidades dentro de la API, ya que pudiera existir el caso en el que alguna instalación ajena dentro del equipo produzca inconvenientes con la integración de nuestro software._
 
 **Comandos a ejecutar en la terminal:**
       
@@ -78,9 +79,10 @@ Postman
       > cd ../..
       > pip install Fastapi uvicorn pymongo
 
+
 #### Requisitos Usuario 👨‍🦱
 
-_Para este punto es importante recordar que el equipo con el cual se encontrará en contacto es de uso medico, por lo cual resultará obvio que los conocimientos básicos acerca de sus predecesores deben tomarse en cuenta para el mismo._
+_Se hace caso omiso de este apartado puesto que no debería haber intervención alguna por parte de usuarios finales o terceros ajenos al desarrollo del proyecto._
 
 <p align="right">
   (<a href="#requisitos-desarrollador">Requisitos Desarrollador</a>)
@@ -90,43 +92,42 @@ _Para este punto es importante recordar que el equipo con el cual se encontrará
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Con nuestro entorno virtual creado y en ejecución mencionado en el punto anterior podemos proceder a ejecutar nuestro proyecto con los siguientes comandos_
 
-_Dí cómo será ese paso_
+_**Dentro de la carpeta principal de la API ejecutar:**_
 
-```
-Da un ejemplo
-```
+      > uvicorn app:app
 
-_Y repite_
+_El comando anterior levantará nuestro servidor para comenzar a trabajar, sin embargo lo realizará con una configuración predeterminada y bastante deficiente para un constante desarrollo de nuevas funcionalidades e integraciones al sistema, por lo cual se recomienda utilizar la siguiente adición de parametros._
 
-```
-hasta finalizar
-```
+      > uvicorn app:app --reload
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_Haciendo que nuestro servidor se reinicie cada que detecte algún cambio dentro de nuestro código de ruteo._
+_Adicional a esto es posible adicionar mayor cantidad de parametros como el host, port, entre otros._
+
+      > uvicorn app:app --reload --host: <param> --port: <param>
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
 
 ## Pruebas 🔩
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_De manera adicional se incluiran archivos de la arquitectura y funcionamiento del sistema, así como un conjunto de datos que puede utilizar para realizar las pruebas pertinentes del sistema._
 
-#### Pruebas Software 👨‍💻
+#### Pruebas Unitarias 👨‍💻
 
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-#### Pruebas Hardware 🔌
-
-_Explica que verifican estas pruebas y por qué_
+_El uso de pruebas unitarias dentro del proyecto nos permite detectar errores dentro de cada funcionalidad del sistema, son de gran ayuda a la hora de intentar agregar una nueva funcionalidad así como ahorrar tiempo al momento de testear el sistema._
 
 ```
-Da un ejemplo
+Agregar instrucciones para la ejecución	de las pruebas unitarias
+```
+
+#### Pruebas de Integración 🔌
+
+_El uso de pruebas de integración dentro del proyecto nos da la ventaja de poder identificar de manera rápida las conexiones fallidas entre este y más microservicios que componen al software así como la integración al backend principal._
+
+```
+Agregar instrucciones para la ejecución	de las pruebas unitarias
 ```
 
 <p align="right">
@@ -137,25 +138,24 @@ Da un ejemplo
 
 ## Diagramas 📚
 
-_A continuación se muestran los diagramas de funcionamiento general y especifico de cada submodulo del sistema ECMO_
+_A continuación se muestran los diagramas de funcionamiento general de la API_
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_El despliegue se realiza de manera automatico con railway._
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
-
 ## Construcción🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_El diseño de esta API se realizo en base al siguiente conjunto de tecnologias._
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Python 3.10.6](https://www.python.org/) ➡ Lenguaje utilizado
+* [FastAPI](https://maven.apache.org/) ➡ Desarrollo del Servidor
+* [Uvicorn](https://rometools.github.io/rome/) ➡ Manejo de peticiones HTTP
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
@@ -169,45 +169,58 @@ Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) 
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/Renadvirvan/ECMO-Solo-Coraz-n-/wiki)
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/ThunderGer23/APImg)
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
 
 ## Versionado 📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/ThunderGer23/APImg).
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
 
 ## Autores 🖋
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la página oficial de la compañía para obtener mayores informes [VHBA](https://sandiaestudio.com/muestras/vhba-medicos/contact-us.html) quíenes han participado en este proyecto. 
+* **ThunderGer** - *Trabajo Inicial* - [ThunderGer23](https://github.com/ThunderGer23)
+* **R2D2** - *Documentación* - [R2D2](https://github.com/ArturoEmmanuelToledoAguado)
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia "*Eclipse Public License - v 2.0*" - mira el archivo [LICENSE](LICENSE) para detalles
+Este proyecto está bajo la Licencia "*MIT*" - mira el archivo [LICENSE](LICENSE) para detalles
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
+**ThunderGer**
+<div align="left">
+    <table border="0">  
+      <tbody>
+        <tr>
+          <td>
+            <img height="100" src="/lib/assets/avatars/ThunderGer.png" width="100"/>
+          </td>
+          <th>
+            <li>
+              Algun agradecimiento quer agregare despues
+            </li>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+</div>
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
+
+
+**R2D2**
+
+* Algun agradecimiento que agregare despues x2 :v
 
 ---
