@@ -166,7 +166,9 @@ _El diseño de esta API se realizo en base al siguiente conjunto de tecnologias.
 * [Starlette](https://www.starlette.io/) ➡ Framework/toolkit ASGI ligero, ideal para construir servicios web asíncronos en Python
 * [Typing_extensions](https://pypi.org/project/typing-extensions/) ➡ Permitir la experimentación con nuevos PEPs del sistema de tipos antes de que sean aceptados y añadidos al módulo de tipado ?
 * [Uvicorn](https://www.uvicorn.org/) ➡ Manejo de peticiones HTTP
-
+* [Python 3.10.6](https://www.python.org/) ➡ Lenguaje utilizado
+* [FastAPI](https://maven.apache.org/) ➡ Desarrollo del Servidor
+* [Uvicorn](https://rometools.github.io/rome/) ➡ Manejo de peticiones HTTP
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
@@ -180,7 +182,8 @@ Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) 
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/ThunderGer23/APImg).
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/ThunderGer23/APImg)
+
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
@@ -203,7 +206,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia "*MIT*" - mira el archivo [LICENSE](LICENSE) para detalles.
+Este proyecto está bajo la Licencia "*MIT*" - mira el archivo [LICENSE](LICENSE) para detalles
 
 <p align="right">(<a href="#intro">Inicio</a>)</p>
 
