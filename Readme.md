@@ -216,11 +216,23 @@ Este proyecto está bajo la Licencia "*MIT*" - mira el archivo [LICENSE](LICENSE
     </table>
 </div>
 
-<p align="right">(<a href="#intro">Inicio</a>)</p>
-
 
 **R2D2**
+<div align="left">
+    <table border="0">  
+      <tbody>
+        <tr>
+          <td>
+            <img height="100" src="/lib/assets/avatars/Arturo.webp" width="100"/>
+          </td>
+          <th>
+            <li>
+              Algun agradecimiento quer agregare despues
+            </li>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+</div>
 
-* Algun agradecimiento que agregare despues x2 :v
-
----
+<p align="right">(<a href="#intro">Inicio</a>)</p>
